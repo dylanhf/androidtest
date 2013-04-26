@@ -13,7 +13,7 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-        watch_id = navigator.geolocation.watchPosition(onSuccess, onError);
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
 
     // onSuccess Geolocation
