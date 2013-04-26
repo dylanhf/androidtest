@@ -29,7 +29,7 @@
                             'Speed: '              + position.coords.speed                 + '<br />' +
                             'Timestamp: '          +                                   position.timestamp          + '<br />';
        var CNTTEST = parseInt($("#CNTTEST").html());
-       $("#CNTTEST").html(CNTTEST + 1);
+                                                                         $("#CNTTEST").html(CNTTEST + 1);
                             
     }
 
@@ -44,6 +44,6 @@
   </head>
   <body>
     <p id="geolocation">Finding geolocation...</p>
-    <p id="CNTTEST">1</p>
+    <p id="#CNTTEST">1</p>
   </body>
 </html>
