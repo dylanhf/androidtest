@@ -13,7 +13,10 @@
     // Cordova is ready
     //
     function onDeviceReady() {
-        watch_id = navigator.geolocation.watchPosition(onSuccess, onError);
+        watch_id = navigator.geolocation.watchPosition(onSuccess, onError,
+                
+			 // Settings
+			 { maximumAge: 3000, timeout: 9000, enableHighAccuracy: true });
     }
 
     // onSuccess Geolocation
